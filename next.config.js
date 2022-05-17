@@ -1,3 +1,5 @@
-module.exports = {
-  reactStrictMode: true,
-}
+const { nextWithHotContentReload } = require('./stackbit-hot-content-reload');
+
+module.exports = nextWithHotContentReload({
+  reactStrictMode: true
+})
